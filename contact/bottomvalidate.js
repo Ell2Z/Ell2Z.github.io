@@ -2,38 +2,38 @@
 jQuery(document).ready(function ($) {
 	
 	//if submit button is clicked
-	$("#topcontactform").submit(function() {		
+	$("#bottomcontactform").submit(function() {		
 		
 		//Get the data from all the fields
-		var name = $('input[name=name]');
-		var email = $('input[name=email]');
+		var namebottom = $('input[name=namebottom]');
+		var emailbottom = $('input[name=emailbottom]');
 		var regx = /^([a-z0-9_\-\.])+\@([a-z0-9_\-\.])+\.([a-z]{2,4})$/i;
-		var phone = $('input[name=phone]');
+		var comment = $('textarea[name=comment]');
 		var returnError = false;
 		
 		//Simple validation to make sure user entered something
 		//Add your own error checking here with JS, but also do some error checking with PHP.
 		//If error found, add hightlight class to the text field
-		if (name.val()=='') {
-			name.addClass('error');
+		if (namebottom.val()=='') {
+			namebottom.addClass('error');
 			returnError = true;
-		} else name.removeClass('error');
+		} else namebottom.removeClass('error');
 		
-		if (email.val()=='') {
-			email.addClass('error');
+		if (emailbottom.val()=='') {
+			emailbottom.addClass('error');
 			returnError = true;
-		} else email.removeClass('error');		
+		} else emailbottom.removeClass('error');		
 		
-		if(!regx.test(email.val())){
-          email.addClass('error');
+		if(!regx.test(emailbottom.val())){
+          emailbottom.addClass('error');
           returnError = true;
-		} else email.removeClass('error');
+		} else emailbottom.removeClass('error');
 		
 		
-		if (phone.val()=='') {
-			phone.addClass('error');
+		if (comment.val()=='') {
+			comment.addClass('error');
 			returnError = true;
-		} else phone.removeClass('error');
+		} else comment.removeClass('error');
 		
 		// Highlight all error fields, then quit.
 		if(returnError == true){
@@ -42,7 +42,7 @@ jQuery(document).ready(function ($) {
 		
 		//organize the data
 		
-		var data = 'name=' + name.val() + '&email=' + email.val() + '&phone='  + encodeURIComponent(phone.val());
+		var data = 'namebottom=' + namebottom.val() + '&emailbottom=' + emailbottom.val() + '&comment='  + encodeURIComponent(comment.val());
 
 		//disabled all the text fields
 		$('.text').attr('disabled','true');
@@ -53,7 +53,7 @@ jQuery(document).ready(function ($) {
 		//start the ajax
 		$.ajax({
 			//this is the php file that processes the data and sends email
-			url: "contact/topcontact.php",	
+			url: "contact/bottomcontact.php",	
 			
 			//GET method is used
 			type: "GET",
@@ -66,11 +66,11 @@ jQuery(document).ready(function ($) {
 			
 			//success
 			success: function (html) {				
-				//if contact/topcontact.php returned 1/true (send mail success)
+				//if contact/bottomcontact.php returned 1/true (send mail success)
 				if (html==1) {
 				
 					//show the success message
-					$('.done').fadeIn('slow');
+					$('.done2').fadeIn('slow');
 					
 					$(".form").find('input[type=text], textarea').val("");
 					

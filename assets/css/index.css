@@ -29,6 +29,14 @@
   background-color: transparent;
 }
 
+.btn-circle{
+  height: 2em;
+  width:2em;
+  align-self: center;
+  font-size: xx-large;
+  background-color: transparent;
+}
+
 .col-md-3{
   padding: .25em;
 }

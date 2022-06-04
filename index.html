@@ -35,98 +35,52 @@
         </div>
     </header>
     <section class="text-center content-section" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h2>请点击姓名</h2>
+        <div class="row">
+            <div class="center-block">
+            <h1 class="mb-1" style="font-size: 49.468px;font-family: Cabin, sans-serif;color: #ff0000;">成绩查询</h1>
+            <h3 class="mb-5" id="notify-name"></h3>
+            <form class="form-signin w-100 m-auto needs-validation" id="info-fill">
+              <fieldset>
+        
+              <!-- Form Name -->
+        
+              <!-- Multiple Radios -->
+              <div class="form-group" >
+                <div class="row">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" name="name" id="floatingName" placeholder="name" required>
+                    <label for="floatingName">姓名</label>
+                  </div>
+                  <div class="form-floating">
+                    <input type="number" class="form-control" name="number" id="floatingNumber" placeholder="number" required>
+                    <label for="floatingNumber">考号</label>
+                  </div>  
                 </div>
+              </div>
+        
+              <!-- Button -->
+              <div class="form-group">
+                <label class="col-md-4 control-label" for="submitButton"></label>
+                <div class="col-md-4 offset-md-4">
+                  <button id="submitButton" name="submitButton" class="btn btn-primary" type="submit">确认</button>
+                </div>
+              </div>
+        
+              </fieldset>
+            </form>
+        
+            <div class="container" id="container-table">
+        
+              </div>
+        
+            <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+            <!-- Include all compiled plugins (below), or include individual files as needed -->
+           <script src="assets/js/getScore.js"></script>
             </div>
-        </div>
-        <div class="container ">
-            <div class="d-flex">
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/1/check.html">宋家颖</a></div>
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/32/check.html">赵浩然</a></div>
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/40/check.html">贾蓝雯</a></div>
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/24/check.html">范玉莹</a></div>
             </div>
-        </div>
-        <div class="container">
-            <div class="d-flex">
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/2/check.html">张浩阳</a></div>
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/19/check.html">范恒熙</a></div>
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/25/check.html">范荣欣</a></div>
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/41/check.html">黄可欣</a></div> 
-            </div>
-        </div>
-        <div class="container">
-            <div class="d-flex">
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/31/check.html">赵晨茜</a></div>
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/30/check.html">许芸熙</a></div>
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/5/check.html">曹莉姣</a></div>
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/6/check.html">李妙晨</a></div> 
-            </div>
-        </div>
-        <div class="container">
-            <div class="d-flex">
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/13/check.html">江雨寒</a></div>
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/12/check.html">江志清</a></div>
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/34/check.html">马云飞</a></div>
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/9/check.html">梁明桐</a></div> 
-            </div>
-        </div>
-        <div class="container">
-            <div class="d-flex">
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/3/check.html">张静雯</a></div>
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/4/check.html">曹奥雪</a></div>
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/23/check.html">范浩然</a></div>
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/21/check.html">范树泉</a></div> 
-            </div>
-        </div>
-        <div class="container">
-            <div class="d-flex">
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/35/check.html">黄发宇</a></div>
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/16/check.html">范云瞻</a></div>
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/20/check.html">范林硕</a></div>
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/37/check.html">王一诺</a></div> 
-            </div>
-        </div>
-        <div class="container">
-            <div class="d-flex">
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/14/check.html">王以科</a></div>
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/10/check.html">梁雨萱</a></div>
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/7/check.html">李梓汐</a></div>
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/8/check.html">梁子一</a></div> 
-            </div>
-        </div>
-        <div class="container">
-            <div class="d-flex">
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/15/check.html">王欣林</a></div>
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/17/check.html">范云萍</a></div>
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/18/check.html">范国硕</a></div>
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/39/check.html">贾友瑞</a></div> 
-            </div>
-        </div>
-        <div class="container">
-            <div class="d-flex">
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/38/check.html">范洪昭</a></div>
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/36/check.html">黄若微</a></div>
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/29/check.html">范雪茹</a></div>
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/28/check.html">范雨彤</a></div> 
-            </div>
-        </div>
-        <div class="container">
-            <div class="d-flex">
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/27/check.html">范菲菲</a></div>
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/26/check.html">范菁菁</a></div>
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/24/check.html">范沐萱</a></div>
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/23/check.html">范树泉</a></div> 
-            </div>
-        </div>
-        <div class="container">
-            <div class="d-flex">
-                <div class="col-md-3" ><a class="btn btn-primary link-primary" role="button"  href="students/33/check.html">陈冲</a></div>
-            </div>
-        </div>
+            
+            <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     </section>
     <div class="map-clean"></div>
     <footer>
@@ -136,7 +90,6 @@
     </footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/index.js"></script>
-    <script src="assets/js/score.js"></script>
 </body>
 
 </html>

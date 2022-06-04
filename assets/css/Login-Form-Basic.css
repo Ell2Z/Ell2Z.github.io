@@ -22,3 +22,14 @@
   padding: .25em;
   font-size: large;
 }
+
+body{
+  background-color: #161616;
+}
+
+.masthead{
+  background-color: #161616;
+  height: auto;
+  padding-top: 10%;
+  padding-bottom: 3%
+}

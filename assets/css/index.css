@@ -40,3 +40,12 @@
 .col-md-3{
   padding: .25em;
 }
+
+body{
+  background-color: #161616;
+}
+
+.masthead{
+  background-color: #161616;
+  height: auto;
+}

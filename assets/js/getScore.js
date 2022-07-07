@@ -29,7 +29,7 @@ $(function(){
     }
 
     $('#submitButton').click(function(e) {
-        // $(this).prop('disabled', true);
+        $(this).prop('disabled', true);
         e.preventDefault();
 
         var selected = $("input[type='number'][name='number']").val();

@@ -70,16 +70,16 @@ case "11武新菊":
 	initTable(selectedName,["语文","书写","数学","科学","道法"],[95,46,54,45,50]);
 	break;
 case "12江志清":	
-	initTable(selectedName,["语文","书写","数学","科学","道法"],[93,46,96,40,43]);
+	initTable(selectedName,["语文","书写","数学","科学","道法"],[93,46,97,40,43]);
 	break;
 case "13江雨寒":	
-	initTable(selectedName,["语文","书写","数学","科学","道法"],[73,40,66,25,27]);
+	initTable(selectedName,["语文","书写","数学","科学","道法"],[82,40,66,25,27]);
 	break;
 case "14王以科":	
 	initTable(selectedName,["语文","书写","数学","科学","道法"],[87,46,87,50,40]);
 	break;
 case "15王欣林":	
-	initTable(selectedName,["语文","书写","数学","科学","道法"],[98,45,91,50,46]);
+	initTable(selectedName,["语文","书写","数学","科学","道法"],[100,45,91,50,46]);
 	break;
 case "16范云瞻":	
 	initTable(selectedName,["语文","书写","数学","科学","道法"],[96,46,83,50,50]);
@@ -124,7 +124,7 @@ case "29范雪茹":
 	initTable(selectedName,["语文","书写","数学","科学","道法"],[75,44,63,40,27]);
 	break;
 case "30许芸熙":	
-	initTable(selectedName,["语文","书写","数学","科学","道法"],[79,43,63,40,38]);
+	initTable(selectedName,["语文","书写","数学","科学","道法"],[81,43,63,40,38]);
 	break;
 case "31赵晨茜":	
 	initTable(selectedName,["语文","书写","数学","科学","道法"],[98,46,96,50,50]);

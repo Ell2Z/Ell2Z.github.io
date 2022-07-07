@@ -15,7 +15,7 @@ $(function(){
         var row = show.insertRow(0);
         var row1 = show.insertRow(1);
         // 根据科目数量生成表格
-        for (let index = 0; index < 2; index++) {
+        for (let index = 0; index < 5; index++) {
             const subject = subjects[index];
             const cell = row.insertCell(index);
             cell.style.cssText="border-bottom: #4a4a4a;border-bottom-style:solid;"
